@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="m-2">
+    <header>
+      <div>
+        <h1 class="text-5xl text-center font-semibold mt-10">
+          <span class="font-bold text-red-600">B</span>ank
+          <span class="text-violet-700"
+            ><span class="font-bold text-red-600">I</span>nside</span
+          >
+        </h1>
+      </div>
+    </header>
+    <main class="max-w-screen-xl mx-auto">
+      <section class="bg-pink-200 py-8 px-9 mt-4 rounded-xl">
+        <div class="grid md:grid-cols-3 text-white my-5 gap-3">
+          <div
+            class="bg-violet-400 hover:bg-violet-500 p-8 rounded-lg shadow-2xl"
+          >
+            <h3 class="mb-4 font-bold text-3xl">Deposit</h3>
+            <p class="font-bold text-4xl">$<span id="depositText">00</span></p>
+          </div>
+          <div class="bg-cyan-400 hover:bg-cyan-500 p-8 rounded-lg shadow-2xl">
+            <h3 class="mb-4 font-bold text-3xl">Withdraw</h3>
+            <p class="font-bold text-4xl">$<span id="withdrawText">00</span></p>
+          </div>
+          <div
+            class="bg-amber-400 hover:bg-amber-500 p-8 rounded-lg shadow-2xl"
+          >
+            <h3 class="mb-4 font-bold text-3xl">Blance</h3>
+            <p class="font-bold text-4xl">$<span id="blanceText">1000</span></p>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+          <div
+            class="bg-indigo-400 hover:bg-indigo-500 p-9 rounded-md shadow-2xl"
+          >
+            <h2 class="font-semibold text-2xl">Please Deposit Amount</h2>
+            <input
+              type="text"
+              name=""
+              id="depositFild"
+              class="my-4 block w-[90%] rounded-md py-1 px-2"
+              placeholder="Your Amount please"
+            />
+            <button id="deposit-btn" class="btn btn-sm btn-success">
+              Deposit
+            </button>
+          </div>
+          <div class="bg-red-400 hover:bg-red-500 p-9 rounded-md shadow-2xl">
+            <h2 class="font-semibold text-white text-2xl">
+              Please Deposit Amount
+            </h2>
+            <input
+              type="text"
+              name=""
+              id="withdrawFild"
+              class="my-4 block w-[90%] rounded-md py-1 px-2"
+              placeholder="Your Amount please"
+            />
+            <button id="withdraw-btn" class="btn btn-sm btn-success">
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/Script/utility.js"></script>
+    <script src="/Script/deposit.js"></script>
+    <script src="/Script/withdraw.js"></script>
+  </body>
+</html>
